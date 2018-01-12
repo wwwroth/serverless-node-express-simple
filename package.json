@@ -1,0 +1,21 @@
+{
+  "name": "wwwroth-com",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon local.js",
+    "deploy": "serverless deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.14.11",
+    "serverless": "^1.25.0"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.0.2",
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  }
+}
