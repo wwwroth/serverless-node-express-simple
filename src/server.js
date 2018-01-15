@@ -4,6 +4,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 const baseUrl = `http://localhost:${port}`;
 
+app.use(express.static('public'))
 app.set('view engine', 'pug')
 
 app.get('/', (req, res) => {
