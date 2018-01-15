@@ -1,12 +1,98 @@
 html
     head
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        meta(name='charset', content='utf-8')
         title= title
         link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css')
 
-    body
-        h1= message
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i')
+        link(rel='stylesheet', href='https://s3.amazonaws.com/wwwroth.com/public/vendor/font-awesome/css/font-awesome.min.css')
+        link(rel='stylesheet', href='https://s3.amazonaws.com/wwwroth.com/public/vendor/devicons/css/devicons.min.css')
+        link(rel='stylesheet', href='https://s3.amazonaws.com/wwwroth.com/public/vendor/simple-line-icons/css/simple-line-icons.css')
+        link(rel='stylesheet', href='https://s3.amazonaws.com/wwwroth.com/public/css/resume.css')
 
-    include partials/footer.pug
+    body#page-top
 
-script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top#sideNav
+            a.navbar-brand.js-scroll-trigger(href='#page-top')
+                span.d-block.d-lg-none Start Bootstrap
+                span.d-none.d-lg-block
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='https://s3.amazonaws.com/wwwroth.com/public/img/phil.jpg')
+            button.navbar-toggler(type='button',data-toggle='collapse',data-target='#navbarSupportedContent',aria-controls="navbarSupportedContent",aria-expanded="false",aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+            div.collapse.navbar-collapse#navbarSupportedContent
+                ul.navbar-nav
+                    li.nav-itme
+                        a.nav-link.js-scroll-trigger(href='#about') About
+                        a.nav-link.js-scroll-trigger(href='#experience') Experience
+                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                        a.nav-link.js-scroll-trigger(href='#interests') Interests
+        div.container-fluid.p-0
+            section.resume-section.p-3.p-lg-5.d-flex.d-column#about
+                div.my-auto
+                    h1.mb-0 Phillip James
+                        span.text-primary Roth
+                    div.subheading.mb-5 45 Longview Trail W · Denville, NJ 07834 · (862) 219-9844 ·
+                        a(href='mailto:philliproth@gmail.com') PhillipRoth@gmail.com
+            section.resume-section.p-3.p-lg-5.d-flex.flex-column#experience
+                div.my-auto
+                    h2.mb-5 Experience
+                    div.resume-item.d-flex.flex-column.flex-md-row.mb-5
+                        div.resume-content.mr-auto
+                            h3.mb-0 Senior Software Engineer
+                            div.subheading.mb-3 Giftogram
+                        div.resume-date.text-md-right
+                            span.text-primary October 2016 - Present <br />Parsippany, NJ
+                    div.resume-item.d-flex.flex-column.flex-md-row.mb-5
+                        div.resume-content.mr-auto
+                            h3.mb-0 Solutions Architect
+                            div.subheading.mb-3 Agorafy
+                        div.resume-date.text-md-right
+                            span.text-primary April 2016 - September 2016 <br />New York, NY
+                    div.resume-item.d-flex.flex-column.flex-md-row.mb-5
+                        div.resume-content.mr-auto
+                            h3.mb-0 Senior Software Engineer
+                            div.subheading.mb-3 Kunversion
+                        div.resume-date.text-md-right
+                            span.text-primary November 2015 - April 2016 <br />Warwick, NY
+                    div.resume-item.d-flex.flex-column.flex-md-row.mb-5
+                        div.resume-content.mr-auto
+                            h3.mb-0 DevOps Engineer
+                            div.subheading.mb-3 DirectNorth
+                        div.resume-date.text-md-right
+                            span.text-primary January 2015 - December 2015 <br />Morristown, NJ
+
+
+            section.resume-section.p-3.p-lg-5.d-flex.flex-column#skills
+                div.my-auto
+                    h2.mb-5 Skills
+                    div.subheading.mb-3 Programming Languages & Tools
+                        ul.list-inline.list-icons
+                            li.list-inline-item
+                                i.devicons.devicons-php
+                            li.list-inline-item
+                                i.devicons.devicons-laravel
+                            li.list-inline-item
+                                i.devicons.devicons-mysql
+                            li.list-inline-item
+                                i.devicons.devicons-linux
+                            li.list-inline-item
+                                i.devicons.devicons-nginx
+                            li.list-inline-item
+                                i.devicons.devicons-git
+                            li.list-inline-item
+                                i.devicons.devicons-nodejs
+                            li.list-inline-item
+                                i.devicons.devicons-bootstrap
+            section.resume-section.p-3.p-lg-5.d-flex.flex-column#interests
+                div.my-auto
+                    h2.mb-5 Interests
+                    div.resume-item.d-flex.flex-column.flex-md-row.mb-5
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh sem, ultrices ut elit vel, condimentum varius erat. Etiam mattis sapien at elementum laoreet.
+                        p.mb-0 Donec bibendum odio eget nisi vehicula, ac tempor augue vehicula. Suspendisse arcu orci, sodales sodales lectus at, pellentesque rutrum ipsum. Sed eros felis, blandit non molestie at, vulputate vitae magna. Morbi laoreet est sit amet ante pharetra vestibulum. Cras nec nisi eros.
+
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')

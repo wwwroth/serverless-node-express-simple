@@ -9,7 +9,7 @@ app.set('view engine', 'pug')
 
 app.get('/', (req, res) => {
    res.render('index', {
-      title: 'wwwroth',
+      title: 'Phillip James Roth | wwwroth.com',
       message: 'A serverless, node/express page'
    })
 });
